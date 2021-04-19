@@ -7,6 +7,9 @@
   <!-- Vue Js -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <!-- /Vue Js -->
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- /font awesome -->
   <!-- style Css -->
   <link rel="stylesheet" href="dist/style.css">
   <!-- style Css -->
@@ -21,11 +24,18 @@
           <img :src="logoSrc" :alt="altLogo">
         </a>
         <!-- /logo -->
-        <!-- barra menu-link, profile, search-input -->
+        <!-- bar menu-link, profile, search-input -->
         <div class="nav-right flex-box">
           <!-- menu-link -->
-          <ul class="list-inline">
-            <li v-for="n in 10">prova</li>
+          <ul class="menu-bar list-inline">
+            <li v-for="menu in menuList">
+              <a class="menu-title text-capitalize" href="#">{{menu.title}} <i class="fas fa-angle-down"></i></a>
+              <ul class="hidden-list">
+                <li v-for="link in menu.linkList" >
+                  <a :href="link.href">{{link.nomeLink}}</a>
+                </li>
+              </ul>
+            </li>
           </ul>
           <!-- /menu-link -->
           <!-- profile -->
@@ -35,7 +45,7 @@
           <input type="text" name="" value="">
           <!-- /search -->
         </div>
-        <!-- barra menu-link, profile, search-input -->
+        <!-- bar menu-link, profile, search-input -->
       </div>
     </header>
 

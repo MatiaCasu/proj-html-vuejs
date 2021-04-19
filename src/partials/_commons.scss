@@ -17,3 +17,12 @@
 .flex-box{
   display: flex;
 }
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-capitalize{
+  text-transform: capitalize;
+}
