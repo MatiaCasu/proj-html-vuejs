@@ -1,0 +1,4 @@
+@mixin center-container($containerType){
+  max-width: $containerType;
+  margin: 0 auto;
+}

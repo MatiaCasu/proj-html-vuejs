@@ -1,0 +1,25 @@
+header{
+  box-shadow: 0 5px 10px #f6f3f5;
+  height: $navBarHeight;
+
+  .nav-bar{
+    background-color: lightgreen;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    @include center-container($mainContainer);
+
+    // LOGO
+    .logo{
+      height: 40%;
+
+      img{
+        height: 100%;
+      }
+    }
+    // LOGO
+    .nav-right{
+      align-items: center;
+    }
+  }
+}

@@ -13,7 +13,34 @@
   <title>MaxCoach</title>
 </head>
 <body>
+  <div class="body-wrap" id="app">
+    <header>
+      <div class="nav-bar flex-box">
+        <!-- logo -->
+        <a href="#app" class="logo">
+          <img :src="logoSrc" :alt="altLogo">
+        </a>
+        <!-- /logo -->
+        <!-- barra menu-link, profile, search-input -->
+        <div class="nav-right flex-box">
+          <!-- menu-link -->
+          <ul class="list-inline">
+            <li v-for="n in 10">prova</li>
+          </ul>
+          <!-- /menu-link -->
+          <!-- profile -->
+          <div class="profile"></div>
+          <!-- /profile -->
+          <!-- search -->
+          <input type="text" name="" value="">
+          <!-- /search -->
+        </div>
+        <!-- barra menu-link, profile, search-input -->
+      </div>
+    </header>
 
+
+  </div>
   <script src="js/script.js"></script>
 </body>
 </html>

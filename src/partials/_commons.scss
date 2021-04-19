@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// border-debug
+// .body-wrap *{
+//   border: 1px solid #000;
+// }
+
+.list-inline{
+  display: flex;
+  list-style: none;
+}
+
+.flex-box{
+  display: flex;
+}
