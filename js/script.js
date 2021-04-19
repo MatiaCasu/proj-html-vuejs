@@ -12,15 +12,15 @@ const app = new Vue({
         title: 'home',
         linkList:[
           {
-            nomeLink: 'prova1',
+            nameLink: 'prova1',
             href: '#'
           },
           {
-            nomeLink: 'prova2',
+            nameLink: 'prova2',
             href: '#'
           },
           {
-            nomeLink: 'Lorem ipsum dolor sit amet jnxcaslxdmaxp ksnax k-òmxC',
+            nameLink: 'Lorem ipsum dolor sit amet jnxcaslxdmaxp ksnax k-òmxC',
             href: '#'
           },
         ]
@@ -29,11 +29,11 @@ const app = new Vue({
         title: 'pages',
         linkList:[
           {
-            nomeLink: 'prova1',
+            nameLink: 'prova1',
             href: '#'
           },
           {
-            nomeLink: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolo',
+            nameLink: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolo.',
             href: '#'
           }
         ]
@@ -42,11 +42,11 @@ const app = new Vue({
         title: 'courses',
         linkList:[
           {
-            nomeLink: 'prova1',
+            nameLink: 'prova1',
             href: '#'
           },
           {
-            nomeLink: 'prova2',
+            nameLink: 'prova2',
             href: '#'
           }
         ]
@@ -55,7 +55,7 @@ const app = new Vue({
         title: 'features',
         linkList:[
           {
-            nomeLink: 'prova1',
+            nameLink: 'prova1',
             href: '#'
           }
         ]
@@ -64,7 +64,7 @@ const app = new Vue({
         title: 'blog',
         linkList:[
           {
-            nomeLink: 'prova1',
+            nameLink: 'prova1',
             href: '#'
           }
         ]
@@ -73,7 +73,7 @@ const app = new Vue({
         title: 'shop',
         linkList:[
           {
-            nomeLink: 'prova1',
+            nameLink: 'prova1',
             href: '#'
           }
         ]

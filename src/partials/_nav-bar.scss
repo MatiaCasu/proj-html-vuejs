@@ -1,13 +1,14 @@
 header{
-  box-shadow: 0 5px 10px #f6f3f5;
-  height: $navBarHeight;
+  box-shadow: 0 5px 10px $grey200;
 
+  // Full nav bar
   .nav-bar{
-    height: 100%;
+    height: $navBarHeight;
     justify-content: space-between;
     align-items: center;
     @include center-container($mainContainer);
   }
+  // Full nav bar
 
   // LOGO
   .logo{
@@ -19,55 +20,96 @@ header{
   }
   // LOGO
 
-  // bar menu-link, profile, search-input
+  // Right nav bar
   .nav-right{
     align-items: center;
 
+    // bar menu-link, profile, search-input
     .menu-bar > li{
       position: relative;
-
-      a{
-        display: flex;
-        align-items: center;
-        min-height: $navBarHeight;
-        overflow: hidden;
-        padding: 10px;
-
-        &.menu-title{
-          height: $navBarHeight;
-        }
-
-        &.menu-title > i{
-          font-size: 12px;
-          margin: 0 5px;
-        }
-
-        &:hover{
-          background-color: #f6f3f5;
-        }
-      }
-
-      .hidden-list{
-        list-style: none;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translateY(100%);
-        display: none;
-        width: 250px;
-        box-shadow: 5px 5px 10px #f6f3f5;
-      }
-
 
       &:hover .hidden-list{
         display: block;
       }
     }
 
-    input{
-      max-width: 30px;
-    }
-  }
-  // /bar menu-link, profile, search-input
+    a{
+      font-size: 12px;
+      color: $black200;
+      min-height: $navBarHeight;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 10px 15px;
 
+      &.menu-title{
+        height: $navBarHeight;
+
+        & > i{
+          margin: 0 5px;
+        }
+      }
+
+      &:hover{
+        color: $blue200;
+      }
+
+      // link PROFILE
+      &.profile{
+        font-size: 18px;
+        padding: 0;
+        padding-right: 15px;
+      }
+    }
+
+    .hidden-list{
+      list-style: none;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: translateY(100%);
+      display: none;
+      width: 250px;
+      background-color: #fff;
+      box-shadow: 5px 5px 10px $grey200;
+
+      & > li{
+        box-shadow: 2px 0 5px $grey200;
+      }
+    }
+    // /bar menu-link, profile, search-input
+
+    // SEARCH input/ button
+    .search{
+      height: $navBarHeight;
+      padding: 10px 0;
+      max-width: 150px;
+      align-items: center;
+
+      & input, & button{
+        height: 30px;
+        border: 0;
+        background-color: $grey200;
+        font-size: 12px;
+      }
+
+      input{
+        padding: 0 10px;
+        max-width: calc(100% - 30px);
+      }
+
+      button{
+        width: 30px;
+        color: $blue200;
+
+        &:hover{
+          background-color: $blue200;
+          color: $grey200;
+        }
+      }
+    }
+    // SEARCH input/ button
+  }
+  // Right nav bar
 }
