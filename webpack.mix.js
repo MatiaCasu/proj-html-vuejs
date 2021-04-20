@@ -1,4 +1,6 @@
 // webpack.mix.js
 let mix = require('laravel-mix');
 
-mix.sass('src/style.scss', 'dist');
+mix.sass('src/style.scss', 'dist').options({
+  processCssUrls: false
+});

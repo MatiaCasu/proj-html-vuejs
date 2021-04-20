@@ -1,5 +1,10 @@
 header{
-  box-shadow: 0 5px 10px $grey200;
+  box-shadow: 0 2px 3px $grey200;
+  background-color: #fff;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  z-index:100;
+  top: 0;
 
   // Full nav bar
   .nav-bar{
@@ -72,7 +77,6 @@ header{
       display: none;
       width: 250px;
       background-color: #fff;
-      box-shadow: 5px 5px 10px $grey200;
 
       & > li{
         box-shadow: 2px 0 5px $grey200;

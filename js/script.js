@@ -81,5 +81,32 @@ const app = new Vue({
     ],
     // /nav menu-link
 
+    partnersLogo: [
+      {
+        brand: "we",
+        logo: "img/client-logo-01.png"
+      },
+      {
+        brand: "",
+        logo: "img/client-logo-02.png"
+      },
+      {
+        brand: "",
+        logo: "img/client-logo-03.png"
+      },
+      {
+        brand: "",
+        logo: "img/client-logo-04.png"
+      },
+      {
+        brand: "",
+        logo: "img/client-logo-05.png"
+      },
+      {
+        brand: "",
+        logo: "img/client-logo-06.png"
+      }
+    ]
+
   }
 });

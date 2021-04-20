@@ -56,6 +56,24 @@
       </div>
     </header>
     <main>
+      <div class="hero">
+        <div class="block flex-box">
+          <div class="block-text">
+            <h1>Distant learning for further expansion</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="button" href="#">Download free guide</a>
+            <p>Have questions? <a href="#">Get free samples</a></p>
+          </div>
+          <div class="block-img">
+            <img class="pattern-left" src="img/maxcoach-shape-08.png" alt="">
+            <img class="pattern-right" src="img/maxcoach-shape-07.png" alt="">
+            <div class="main-img"></div>
+          </div>
+        </div>
+        <div class="partners-logo flex-box">
+          <img v-for="partner in partnersLogo" :src="partner.logo" :alt="partner.brand">
+        </div>
+      </div>
 
     </main>
     <footer></footer>

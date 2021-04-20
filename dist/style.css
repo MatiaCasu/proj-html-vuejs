@@ -28,7 +28,12 @@ a {
 }
 
 header {
-  box-shadow: 0 5px 10px #f6f3f5;
+  box-shadow: 0 2px 3px #f6f3f5;
+  background-color: #fff;
+  /* Safari */
+  position: sticky;
+  z-index: 100;
+  top: 0;
 }
 header .nav-bar {
   height: 50px;
@@ -85,7 +90,6 @@ header .nav-right .hidden-list {
   display: none;
   width: 250px;
   background-color: #fff;
-  box-shadow: 5px 5px 10px #f6f3f5;
 }
 header .nav-right .hidden-list > li {
   box-shadow: 2px 0 5px #f6f3f5;
@@ -113,4 +117,71 @@ header .nav-right .search button {
 header .nav-right .search button:hover {
   background-color: #25ab94;
   color: #f6f3f5;
+}
+
+.hero {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.hero .block {
+  align-items: center;
+  padding: 50px 0;
+}
+.hero .block-img {
+  flex-basis: 55%;
+  position: relative;
+}
+.hero .block-img .main-img {
+  position: relative;
+  left: calc(100% - 450px);
+  height: 450px;
+  width: 450px;
+  background-image: url("../img/about-me-profile.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.hero .block-img > img {
+  height: 200px;
+}
+.hero .block-img > img.pattern-left {
+  position: absolute;
+  left: 0;
+  top: 20%;
+}
+.hero .block-img > img.pattern-right {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+}
+.hero .block-text {
+  flex-basis: 45%;
+  margin-right: 40px;
+}
+.hero .block-text p {
+  margin: 20px 0;
+}
+.hero .partners-logo {
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.hero .partners-logo img {
+  margin: 20px 0;
+}
+.hero .partners-logo img:not(:first-child) {
+  margin-left: 50px;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #25ab94;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+a.button:hover {
+  background-color: #48495f;
 }

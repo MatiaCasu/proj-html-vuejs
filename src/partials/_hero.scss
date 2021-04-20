@@ -1,0 +1,71 @@
+.hero{
+  @include center-container($mainContainer);
+  padding-bottom: 100px;
+
+  // BACKGROUNDS and TEXT block
+  .block{
+    align-items: center;
+    padding: 50px 0;
+  }
+  // /BACKGROUNDS and TEXT block
+
+  // HERO BACKGROUNDS
+  .block-img{
+    flex-basis: 55%;
+    position: relative;
+
+    .main-img{
+      position: relative;
+      left: calc(100% - 450px);
+      height: 450px;
+      width: 450px;
+      background-image: url('../img/about-me-profile.jpg');
+      background-size: cover;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    & > img{
+      height: 200px;
+      &.pattern-left{
+        position: absolute;
+        left: 0;
+        top: 20%;
+      }
+
+      &.pattern-right{
+        position: absolute;
+        right: 50px;
+        bottom: 0;
+      }
+    }
+  }
+  // /HERO BACKGROUNDS
+
+  // HERO TEXT
+  .block-text{
+    flex-basis: 45%;
+    margin-right: 40px;
+    p{
+      margin: 20px 0;
+    }
+  }
+  // HERO TEXT
+
+  // LOGHI BRAND PARTNER
+  .partners-logo{
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    img{
+      margin: 20px 0;
+
+      &:not(:first-child){
+        margin-left: 50px;
+      }
+    }
+  }
+  // /LOGHI BRAND PARTNER
+
+}
