@@ -1,5 +1,5 @@
 header{
-  box-shadow: 0 2px 3px $grey200;
+  box-shadow: 0 2px 3px $grey100;
   background-color: #fff;
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -42,7 +42,7 @@ header{
       font-size: 12px;
       color: $black200;
       min-height: $navBarHeight;
-      font-weight: 600;
+      font-weight: 500;
       display: flex;
       align-items: center;
       overflow: hidden;
@@ -57,6 +57,7 @@ header{
       }
 
       &:hover{
+        // color: $blue400;
         color: $blue200;
       }
 
@@ -79,7 +80,7 @@ header{
       background-color: #fff;
 
       & > li{
-        box-shadow: 2px 0 5px $grey200;
+        box-shadow: 2px 0 5px $grey100;
       }
     }
     // /bar menu-link, profile, search-input
@@ -94,7 +95,7 @@ header{
       & input, & button{
         height: 30px;
         border: 0;
-        background-color: $grey200;
+        background-color: $grey100;
         font-size: 12px;
       }
 
@@ -109,7 +110,7 @@ header{
 
         &:hover{
           background-color: $blue200;
-          color: $grey200;
+          color: $grey100;
         }
       }
     }

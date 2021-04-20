@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 
@@ -61,7 +61,7 @@ header .nav-right a {
   font-size: 12px;
   color: #2c3837;
   min-height: 50px;
-  font-weight: 600;
+  font-weight: 500;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -129,7 +129,7 @@ header .nav-right .search button:hover {
   padding: 50px 0;
 }
 .hero .block-img {
-  flex-basis: 55%;
+  flex-basis: 50%;
   position: relative;
 }
 .hero .block-img .main-img {
@@ -148,7 +148,7 @@ header .nav-right .search button:hover {
 .hero .block-img > img.pattern-left {
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 30%;
 }
 .hero .block-img > img.pattern-right {
   position: absolute;
@@ -156,11 +156,35 @@ header .nav-right .search button:hover {
   bottom: 0;
 }
 .hero .block-text {
-  flex-basis: 45%;
-  margin-right: 40px;
+  flex-basis: 50%;
+  margin-right: 30px;
+}
+.hero .block-text h1 {
+  font-size: 36px;
+  color: #3F3A64;
+  font-weight: 600;
+  line-height: 50px;
+}
+.hero .block-text > a.button i {
+  margin-right: 10px;
 }
 .hero .block-text p {
-  margin: 20px 0;
+  margin: 15px 0 30px;
+  font-weight: 500;
+  color: #8C89A2;
+}
+.hero .block-text p.questions {
+  font-size: 14px;
+}
+.hero .block-text p.questions > a {
+  color: #25ab94;
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.hero .block-text p.questions > a:hover {
+  color: #3F3A64;
 }
 .hero .partners-logo {
   align-items: center;
@@ -176,12 +200,13 @@ header .nav-right .search button:hover {
 
 a.button {
   display: inline-block;
-  padding: 10px;
+  padding: 15px 30px;
   background-color: #25ab94;
   font-size: 10px;
   font-weight: 600;
   color: #fff;
+  border-radius: 5px;
 }
 a.button:hover {
-  background-color: #48495f;
+  background-color: #3F3A64;
 }
