@@ -1,0 +1,44 @@
+
+.featured-courses{
+  background-color: $blue100;
+
+  .container{
+    @include center-container-pY($mainContainer, 80px);
+  }
+
+  .courses-list{
+    flex-wrap: wrap;
+    padding: 40px 0;
+
+    > li{
+      width: calc(50% - 40px);
+      margin: 20px 40px 20px 0;
+    }
+
+    a.course{
+    background-color: lightgreen;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid blue;
+
+      & > img{
+        align-self: flex-start;
+        height: 100px;
+        width: 100px;
+        border: 2px solid blue;
+        border-radius: 50%;
+      }
+
+      & > ul {
+        padding: 0 20px;
+
+        li.other-features{
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 12px;
+        }
+      }
+    }
+  }
+}

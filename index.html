@@ -57,7 +57,7 @@
     </header>
     <main>
       <!-- hero -->
-      <div class="hero">
+      <section class="hero">
         <div class="block flex-box">
           <!-- hero TEXT -->
           <div class="block-text">
@@ -79,9 +79,52 @@
         <div class="partners-logo flex-box">
           <img v-for="partner in partnersLogo" :src="partner.logo" :alt="partner.brand">
         </div>
-      </div>
+      </section>
       <!-- /partners logo  -->
       <!-- hero -->
+      <section class="featured-courses">
+        <div class="container">
+        <h3 class="subtitle">stimulated to learn?</h3>
+        <h2>featured online courses</h2>
+        <ul class="courses-list flex-box">
+          <li>
+            <a class="course" href="#">
+              <img src="" alt="">
+              <ul class="features">
+                <li><h3 class="price">$ <span>40</span>.00</h3></li>
+                <li><p class="course-name">Learnig to Write as a Professional Author</p></li>
+                <li class="other-features">Lesson</li>
+                <li class="other-features">Students</li>
+                <li class="other-features">stuff</li>
+              </ul>
+            </a>
+          </li>
+          <li>
+            <a class="course" href="#">
+              <img src="" alt="">
+              <ul class="features">
+                <li><h3 class="price">$ <span>40</span>.00</h3></li>
+                <li><p class="course-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
+                <li class="other-features">Lesson</li>
+                <li class="other-features">Students</li>
+                <li class="other-features">stuff</li>
+              </ul>
+            </a>
+          </li>
+          <li>
+            <a class="course" href="#">
+              prova1
+            </a>
+          </li>
+          <li>
+            <a class="course" href="#">
+              prova1
+            </a>
+          </li>
+        </ul>
+        </div>
+      </section>
+
     </main>
     <footer>
       <div class="footer-container flex-box">

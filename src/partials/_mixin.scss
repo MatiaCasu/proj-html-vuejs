@@ -2,3 +2,9 @@
   max-width: $containerType;
   margin: 0 auto;
 }
+
+@mixin center-container-pY($containerType, $paddingY){
+  max-width: $containerType;
+  margin: 0 auto;
+  padding: $paddingY 0;
+}

@@ -20,11 +20,14 @@ footer{
     }
 
     ul > li{
-      list-style: none;
       font-size: 12px;
       margin: 10px 0;
       margin-right: 10px;
       font-weight: 500;
+
+      & > a:hover{
+        color: $blue200;
+      }
     }
     // commons
 
