@@ -32,7 +32,7 @@
         <div class="nav-right flex-box">
           <!-- menu-link -->
           <ul class="menu-bar list-inline">
-            <li v-for="menu in menuList">
+            <li v-for="menu in navMenuList">
               <a class="menu-title text-capitalize" href="#">{{menu.title}} <i class="fas fa-angle-down"></i></a>
               <ul class="hidden-list">
                 <li v-for="link in menu.linkList" >
@@ -56,28 +56,88 @@
       </div>
     </header>
     <main>
+      <!-- hero -->
       <div class="hero">
         <div class="block flex-box">
+          <!-- hero TEXT -->
           <div class="block-text">
             <h1>Distant learning for further expansion</h1>
             <p>Learning is a life-long journey that in fact we never find the terminate stop. Stop searching, enjoy the process.</p>
             <a class="button" href="#"><i class="fas fa-download"></i>Download free guide</a>
             <p class="questions">Have questions? <a href="#">Get free samples &rarr;</a></p>
           </div>
+          <!-- /hero TEXT -->
+          <!-- hero BACKGROUNDS -->
           <div class="block-img">
             <img class="pattern-left" src="img/maxcoach-shape-08.png" alt="">
             <img class="pattern-right" src="img/maxcoach-shape-07.png" alt="">
             <div class="main-img"></div>
           </div>
         </div>
+        <!-- /hero BACKGROUNDS -->
+        <!-- partners logo  -->
         <div class="partners-logo flex-box">
           <img v-for="partner in partnersLogo" :src="partner.logo" :alt="partner.brand">
         </div>
       </div>
-
+      <!-- /partners logo  -->
+      <!-- hero -->
     </main>
-    <footer></footer>
-
+    <footer>
+      <div class="footer-container flex-box">
+        <!-- LEFT block FOOTER -->
+        <div class="footer-left">
+          <h5>address</h5>
+          <ul class="address-list">
+            <li>382 NE 191st ST #87394 Miami, FL 33179-3899</li>
+            <li>+1 (305) 546-9909 (9am - 5pm EST, Monday-Friday)</li>
+            <li>support@maxcoach.com</li>
+          </ul>
+          <ul class="social-icons flex-box">
+            <li>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!-- LEFT block FOOTER -->
+        <!-- RIGHT block FOOTER -->
+        <div class="footer-right flex-box">
+          <!-- EXPLORE -->
+          <div class="explore-list">
+            <h5>explore</h5>
+            <ul class="flex-box">
+              <li v-for="link in exploreLink">
+                <a :href="link.href">{{link.nameLink}}</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /EXPLORE -->
+          <!-- INFORMATION -->
+          <div class="info-list">
+            <h5>info</h5>
+            <ul>
+              <li v-for="link in infoLink">
+                <a :href="link.href">{{link.nameLink}}</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /INFORMATION -->
+        </div>
+        <!-- /RIGHT block FOOTER -->
+        <div class="copyright-bar">
+          <p>2020 Maxcoach. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
   </div>
   <script src="js/script.js"></script>
 </body>

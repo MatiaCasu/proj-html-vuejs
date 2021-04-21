@@ -1,13 +1,15 @@
 const app = new Vue({
   el: "#app",
   data: {
+    
+    // header NAV BAR
     // logo NavBar
     logoSrc: "img/dark-logo.png",
     altLogo: "Max Coach logo",
     // logo NavBar
 
     // nav menu-link
-    menuList:[
+    navMenuList:[
       {
         title: 'home',
         linkList:[
@@ -80,7 +82,9 @@ const app = new Vue({
       },
     ],
     // /nav menu-link
+    // /header NAV BAR
 
+    // HERO partners logo
     partnersLogo: [
       {
         brand: "we",
@@ -106,7 +110,62 @@ const app = new Vue({
         brand: "",
         logo: "img/client-logo-06.png"
       }
+    ],
+    // HERO partners logo
+
+    // FOOTER Lists
+    // /footer EXPLORE
+    exploreLink: [
+      {
+        nameLink: 'explore',
+        href: '#'
+      },
+      {
+        nameLink: 'prova2',
+        href: '#'
+      },
+      {
+        nameLink: 'prova2',
+        href: '#'
+      },
+      {
+        nameLink: 'prova2',
+        href: '#'
+      },
+      {
+        nameLink: 'prova2',
+        href: '#'
+      },
+      {
+        nameLink: 'prova2',
+        href: '#'
+      }
+    ],
+    // /footer EXPLORE
+
+    // footer INFORMATIONS
+    infoLink: [
+      {
+        nameLink: 'info',
+        href: '#'
+      },
+      {
+        nameLink: 'prova2',
+        href: '#'
+      },
+      {
+        nameLink: 'prova2',
+        href: '#'
+      },
+      {
+        nameLink: 'prova2',
+        href: '#'
+      }
     ]
+    // /footer INFORMATIONS
+    // /FOOTER Lists
+
+
 
   }
 });
