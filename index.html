@@ -83,25 +83,55 @@
       <!-- /partners logo  -->
       <!-- hero -->
       <section class="featured-courses">
-        <div class="container">
-        <h3 class="subtitle">stimulated to learn?</h3>
-        <h2>featured online courses</h2>
-        <ul class="courses-list flex-box">
-          <li v-for="course in featuredCourses">
-            <a class="course" :href="course.href">
-              <img :src="course.img" :alt="course.name">
-              <ul class="features">
-                <li><h3 class="price"><span>{{course.price.int}}</span>{{course.price.float}}</h3></li>
-                <li><p class="course-name">{{course.name}}</p></li>
-                <li v-for="other in course.others" class="other-features">
-                  <i :class="other.icon"></i>
-                  <p>{{other.value}}</p>
-                  <p>{{other.type}}</p>
-                </li>
-              </ul>
-            </a>
-          </li>
-        </ul>
+        <div class="container text-center">
+          <h3 class="subtitle">stimulated to learn?</h3>
+          <h2>featured online courses</h2>
+          <ul class="courses-list flex-box  text-left">
+            <li v-for="course in featuredCourses">
+              <a class="course" :href="course.href">
+                <img :src="course.img" :alt="course.name">
+                <ul class="features">
+                  <li><h3 class="price"><span>{{course.price.int}}</span>{{course.price.float}}</h3></li>
+                  <li><h4 class="course-name">{{course.name}}</h4></li>
+                  <li v-for="other in course.others" class="other-features">
+                    <i :class="other.icon"></i>
+                    <p>{{other.value}}</p>
+                    <p>{{other.type}}</p>
+                  </li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+          <a class="button" href="#">View all courses &rarr;</a>
+        </div>
+      </section>
+      <section class="smart-tutoring">
+        <div class="container text-center">
+          <h3 class="subtitle">stimulated to learn?</h3>
+          <h2>featured online courses</h2>
+          <ul class="benefits flex-box text-left">
+            <li>
+              <img src="img\home-2-image-box-01.png" alt="">
+              <h4>Customize preferences</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="#">Start here &rarr;</a>
+            </li>
+            <li>
+              <img src="img\about-us-02-image-box-02.png" alt="">
+              <h4>Cloud storage</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#">Get free quote &rarr;</a>
+            </li>
+            <li>
+              <img src="img\home-2-image-box-03.png" alt="">
+              <h4>Multimedia Channel</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#">Start now &rarr;</a>
+            </li>
+          </ul>
+          <div class="guide-book">
+
+          </div>
         </div>
       </section>
     </main>

@@ -122,7 +122,7 @@ const app = new Vue({
           int: "$40",
           float: ".00"
         },
-        name: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        name: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         others: [
           {
             icon: "far fa-file-alt",
@@ -136,7 +136,7 @@ const app = new Vue({
           },
           {
             icon: "far fa-flag",
-            type: "Language",
+            type: "Lang",
             value: "En"
           },
         ]

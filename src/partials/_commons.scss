@@ -26,23 +26,3 @@ a{
   text-decoration: none;
   color: inherit;
 }
-
-.text-capitalize, h2{
-  text-transform: capitalize;
-}
-
-h2, h3.subtitle{
-  text-align: center;
-}
-
-h2{
-  color: $blue400;
-}
-
-h3.subtitle{
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 12px;
-  color: $grey400;
-  margin-bottom: 10px;
-}
