@@ -87,44 +87,23 @@
         <h3 class="subtitle">stimulated to learn?</h3>
         <h2>featured online courses</h2>
         <ul class="courses-list flex-box">
-          <li>
-            <a class="course" href="#">
-              <img src="" alt="">
+          <li v-for="course in featuredCourses">
+            <a class="course" :href="course.href">
+              <img :src="course.img" :alt="course.name">
               <ul class="features">
-                <li><h3 class="price">$ <span>40</span>.00</h3></li>
-                <li><p class="course-name">Learnig to Write as a Professional Author</p></li>
-                <li class="other-features">Lesson</li>
-                <li class="other-features">Students</li>
-                <li class="other-features">stuff</li>
+                <li><h3 class="price"><span>{{course.price.int}}</span>{{course.price.float}}</h3></li>
+                <li><p class="course-name">{{course.name}}</p></li>
+                <li v-for="other in course.others" class="other-features">
+                  <i :class="other.icon"></i>
+                  <p>{{other.value}}</p>
+                  <p>{{other.type}}</p>
+                </li>
               </ul>
-            </a>
-          </li>
-          <li>
-            <a class="course" href="#">
-              <img src="" alt="">
-              <ul class="features">
-                <li><h3 class="price">$ <span>40</span>.00</h3></li>
-                <li><p class="course-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></li>
-                <li class="other-features">Lesson</li>
-                <li class="other-features">Students</li>
-                <li class="other-features">stuff</li>
-              </ul>
-            </a>
-          </li>
-          <li>
-            <a class="course" href="#">
-              prova1
-            </a>
-          </li>
-          <li>
-            <a class="course" href="#">
-              prova1
             </a>
           </li>
         </ul>
         </div>
       </section>
-
     </main>
     <footer>
       <div class="footer-container flex-box">
@@ -158,7 +137,7 @@
           <div class="explore-list">
             <h5>explore</h5>
             <ul class="flex-box">
-              <li v-for="link in exploreLink">
+              <li v-for="link in footerExploreLink">
                 <a :href="link.href">{{link.nameLink}}</a>
               </li>
             </ul>
@@ -168,7 +147,7 @@
           <div class="info-list">
             <h5>info</h5>
             <ul>
-              <li v-for="link in infoLink">
+              <li v-for="link in footerInfoLink">
                 <a :href="link.href">{{link.nameLink}}</a>
               </li>
             </ul>
