@@ -1,0 +1,29 @@
+.success-numbers{
+  .container{
+    @include center-container($mainContainer);
+    min-height: 100px;
+  }
+
+  .number-block{
+    flex-grow: 1;
+    padding: 100px 20px;
+    border: 1px solid $grey200;
+    border: 0 1px;
+
+    & h4{
+      font-size: 20px;
+      padding: 0 30px;
+    }
+
+    & h3{
+      margin-top: 20px;
+      font-size: 34px;
+      color: $secondaryColor;
+    }
+
+    & h5{
+      color: $mainTextColor;
+      text-transform: uppercase;
+    }
+  }
+}

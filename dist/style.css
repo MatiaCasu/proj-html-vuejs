@@ -522,3 +522,28 @@ p {
 .learners-opinions .container.get-started h2 {
   margin-bottom: 30px;
 }
+
+.success-numbers .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100px;
+}
+.success-numbers .number-block {
+  flex-grow: 1;
+  padding: 100px 20px;
+  border: 1px solid #f5f1ed;
+  border: 0 1px;
+}
+.success-numbers .number-block h4 {
+  font-size: 20px;
+  padding: 0 30px;
+}
+.success-numbers .number-block h3 {
+  margin-top: 20px;
+  font-size: 34px;
+  color: #EF6F31;
+}
+.success-numbers .number-block h5 {
+  color: #8C89A2;
+  text-transform: uppercase;
+}
