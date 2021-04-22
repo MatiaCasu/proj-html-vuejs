@@ -41,7 +41,7 @@
 
   // guide book
   .guide-book{
-    padding-top: 100px;
+    padding-top: 80px;
 
     // video
     .block-video{
@@ -87,18 +87,12 @@
         color: $mainTextColor;
 
         span{
-          color: $primaryColor;
-          font-weight: 500;
+          @include change-inline($primaryColor, 500);
         }
       }
 
       & h2{
         font-size: 28px;
-
-        span{
-          color: $secondaryColor;
-          font-weight: 400;
-        }
       }
 
       & p{

@@ -6,6 +6,7 @@ a.button{
   font-weight: 600;
   color: #fff;
   border-radius: 5px;
+  min-width: 200px;
 
   &:hover{
     background-color: $primaryColor;

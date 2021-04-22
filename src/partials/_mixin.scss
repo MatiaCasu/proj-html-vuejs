@@ -8,3 +8,8 @@
   margin: 0 auto;
   padding: $paddingY 0;
 }
+
+@mixin change-inline($color, $weight){
+  color: $color;
+  font-weight: $weight;
+}

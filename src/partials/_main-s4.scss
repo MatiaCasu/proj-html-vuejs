@@ -1,0 +1,95 @@
+.learners-opinions{
+  background-color: $blue100;
+
+  // full container
+  .container{
+    @include center-container-pY(100%, 80px);
+  }
+  // /full container
+
+  // carousel
+  .carousel-wrapper{
+    margin: 40px 30px;
+
+    & .opinions{
+      justify-content: center;
+    }
+
+    & .opinion {
+      width: 400px;
+      max-height: 300px;
+      padding: 30px;
+      background-color: #fff;
+      opacity: 0.5;
+
+      &.active {
+        opacity: 1;
+        margin: 0 30px;
+      }
+
+      & > p{
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+
+    .learner{
+      align-items: center;
+      margin-top: 20px;
+
+      & > img{
+        height: 80px;
+        border-radius: 50%;
+      }
+    }
+
+    .learner-info {
+      margin-left: 20px;
+
+      & h5{
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      & h4{
+        color: $mainTextColor;
+      }
+    }
+
+    .carousel-bullets {
+      color: $mainTextColor;
+      margin-top: 30px;
+
+      & i {
+        font-size: 8px;
+        margin: 0 10px;
+      }
+
+      & i.active {
+        font-size: 10px;
+        color: $primaryColor;
+      }
+    }
+  }
+  // /carousel
+
+  // get started
+  .container.get-started{
+    @include center-container-pY($mainContainer, 20px);
+
+    & h3{
+      color: $primaryColor;
+
+      & span{
+        @include change-inline($secondaryColor, 400);
+      }
+    }
+
+    & h2{
+      margin-bottom: 30px;
+    }
+  }
+  // /get started
+}

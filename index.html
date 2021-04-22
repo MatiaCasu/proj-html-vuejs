@@ -56,7 +56,7 @@
       </div>
     </header>
     <main>
-      <!-- hero -->
+      <!-- sezione 1 HERO -->
       <section class="hero">
         <div class="block flex-box">
           <!-- hero TEXT -->
@@ -73,22 +73,23 @@
             <img class="pattern-right" src="img/maxcoach-shape-07.png" alt="">
             <div class="main-img"></div>
           </div>
+          <!-- /hero BACKGROUNDS -->
         </div>
-        <!-- /hero BACKGROUNDS -->
         <!-- partners logo  -->
         <div class="partners-logo flex-box">
           <img v-for="partner in partnersLogo" :src="partner.logo" :alt="partner.brand">
         </div>
+        <!-- /partners logo  -->
       </section>
-      <!-- /partners logo  -->
-      <!-- hero -->
+      <!-- /sezione 1 HERO -->
+      <!-- sezione 2 FEATURED COURSES -->
       <section class="featured-courses">
         <div class="container text-center">
           <h3 class="subtitle">stimulated to learn?</h3>
           <h2>featured online courses</h2>
           <ul class="courses-list flex-box  text-left">
             <li v-for="course in featuredCourses">
-              <a class="course" :href="course.href">
+              <a class="course flex-box" :href="course.href">
                 <img :src="course.img" :alt="course.name">
                 <ul class="features">
                   <li><h3 class="price"><span>{{course.price.int}}</span>{{course.price.float}}</h3></li>
@@ -105,10 +106,13 @@
           <a class="button" href="#">View all courses &rarr;</a>
         </div>
       </section>
+      <!-- /sezione 2 FEATURED COURSES -->
+      <!-- sezione 3 SMART TUTORING -->
       <section class="smart-tutoring">
         <div class="container text-center">
+          <!-- smart tutoring BENEFITS -->
           <h3 class="subtitle">stimulated to learn?</h3>
-          <h2>featured online courses</h2>
+          <h2>Access <span>Smart Tutoring</span> Program For Benefits</h2>
           <ul class="benefits flex-box text-left">
             <li>
               <img src="img\home-2-image-box-01.png" alt="">
@@ -129,6 +133,8 @@
               <a href="#">Start now &rarr;</a>
             </li>
           </ul>
+          <!-- /smart tutoring BENEFITS -->
+          <!-- Guide Book -->
           <div class="guide-book flex-box">
             <div class="block-video">
               <img src="img\maxcoach-shape-05-100x100.png" class="pattern rounded-pois">
@@ -147,8 +153,70 @@
               <a href="#">Download free guidebook &rarr;</a>
             </div>
           </div>
+          <!-- /Guide Book -->
         </div>
       </section>
+      <!-- /sezione 3 SMART TUTORING -->
+      <!-- sezione 4 lEARNERS OPINIONS -->
+      <section class="learners-opinions">
+        <div class="container text-center">
+          <h3 class="subtitle">get started <span>effortlessly</span></h3>
+          <h2>Our <span>Top Learners'</span> Verbatim</h2>
+          <!-- CAROUSEL -->
+          <div class="carousel-wrapper">
+            <div class="opinions flex-box text-left">
+              <div class="opinion">
+                <h4>Multimedia Channel</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="learner flex-box">
+                  <img src="img\testimonial-avata-01.jpg" alt="">
+                  <div class="learner-info">
+                    <h5>florence themes</h5>
+                    <h4 class="text-capitalize">/ multimedia admin</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="opinion active">
+                <h4>Multimedia Channel</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="learner flex-box">
+                  <img src="img\testimonial-avata-02.jpg" alt="">
+                  <div class="learner-info">
+                    <h5>mina hollace</h5>
+                    <h4 class="text-capitalize">/ Freelancer</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="opinion">
+                <h4>Multimedia Channel</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="learner flex-box">
+                  <img src="img\testimonial-avata-03.jpg" alt="">
+                  <div class="learner-info">
+                    <h5>madley pondor</h5>
+                    <h4 class="text-capitalize">/ it specialist</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-bullets">
+              <i class="fas fa-circle active"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+            </div>
+          </div>
+          <!-- /CAROUSEL -->
+          <!-- get started -->
+          <div class="get-started container text-center">
+            <h3>Start today for getting <span>Online Certification</span></h3>
+            <h2>You can be your own guiding star with our help!</h2>
+            <a class="button" href="#">Get started now</a>
+          </div>
+          <!-- get started -->
+        </div>
+      </section>
+      <!-- /sezione 4 lEARNERS OPINIONS -->
     </main>
     <footer>
       <div class="footer-container flex-box">

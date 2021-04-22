@@ -203,6 +203,7 @@ a.button {
   font-weight: 600;
   color: #fff;
   border-radius: 5px;
+  min-width: 200px;
 }
 a.button:hover {
   background-color: #3F3A64;
@@ -278,7 +279,6 @@ footer .footer-container .copyright-bar {
 }
 .featured-courses .courses-list a.course {
   width: 100%;
-  display: flex;
   align-items: center;
 }
 .featured-courses .courses-list a.course > img {
@@ -350,7 +350,7 @@ footer .footer-container .copyright-bar {
   color: #3F3A64;
 }
 .smart-tutoring .guide-book {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .smart-tutoring .guide-book .block-video {
   position: relative;
@@ -393,10 +393,6 @@ footer .footer-container .copyright-bar {
 .smart-tutoring .guide-book .block-text h2 {
   font-size: 28px;
 }
-.smart-tutoring .guide-book .block-text h2 span {
-  color: #EF6F31;
-  font-weight: 400;
-}
 .smart-tutoring .guide-book .block-text p {
   margin: 30px 0;
 }
@@ -414,6 +410,10 @@ footer .footer-container .copyright-bar {
 
 h2 {
   color: #3F3A64;
+}
+h2 > span {
+  color: #EF6F31;
+  font-weight: 400;
 }
 
 h3.subtitle {
@@ -444,4 +444,81 @@ p {
 
 .text-left {
   text-align: left;
+}
+
+.learners-opinions {
+  background-color: #f5f7fa;
+}
+.learners-opinions .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.learners-opinions .carousel-wrapper {
+  margin: 40px 30px;
+}
+.learners-opinions .carousel-wrapper .opinions {
+  justify-content: center;
+}
+.learners-opinions .carousel-wrapper .opinion {
+  width: 400px;
+  max-height: 300px;
+  padding: 30px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+.learners-opinions .carousel-wrapper .opinion.active {
+  opacity: 1;
+  margin: 0 30px;
+}
+.learners-opinions .carousel-wrapper .opinion > p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.learners-opinions .carousel-wrapper .learner {
+  align-items: center;
+  margin-top: 20px;
+}
+.learners-opinions .carousel-wrapper .learner > img {
+  height: 80px;
+  border-radius: 50%;
+}
+.learners-opinions .carousel-wrapper .learner-info {
+  margin-left: 20px;
+}
+.learners-opinions .carousel-wrapper .learner-info h5 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.learners-opinions .carousel-wrapper .learner-info h4 {
+  color: #8C89A2;
+}
+.learners-opinions .carousel-wrapper .carousel-bullets {
+  color: #8C89A2;
+  margin-top: 30px;
+}
+.learners-opinions .carousel-wrapper .carousel-bullets i {
+  font-size: 8px;
+  margin: 0 10px;
+}
+.learners-opinions .carousel-wrapper .carousel-bullets i.active {
+  font-size: 10px;
+  color: #3F3A64;
+}
+.learners-opinions .container.get-started {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.learners-opinions .container.get-started h3 {
+  color: #3F3A64;
+}
+.learners-opinions .container.get-started h3 span {
+  color: #EF6F31;
+  font-weight: 400;
+}
+.learners-opinions .container.get-started h2 {
+  margin-bottom: 30px;
 }

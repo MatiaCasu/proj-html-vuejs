@@ -1,6 +1,10 @@
 
 h2{
   color: $primaryColor;
+
+   > span{
+    @include change-inline($secondaryColor, 400);
+  }
 }
 
 h3.subtitle{
