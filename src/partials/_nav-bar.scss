@@ -57,8 +57,8 @@ header{
       }
 
       &:hover{
-        // color: $blue400;
-        color: $blue200;
+        // color: $primaryColor;
+        color: $secondaryColor;
       }
 
       // link PROFILE
@@ -105,10 +105,10 @@ header{
 
       button{
         width: 30px;
-        color: $blue200;
+        color: $secondaryColor;
 
         &:hover{
-          background-color: $blue200;
+          background-color: $secondaryColor;
           color: $grey100;
         }
       }

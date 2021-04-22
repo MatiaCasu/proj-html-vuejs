@@ -48,7 +48,7 @@
     margin-right: 30px;
     h1{
       font-size: 36px;
-      color: $blue400;
+      color: $primaryColor;
       font-weight: 600;
       line-height: 50px;
     }
@@ -60,18 +60,18 @@
     p{
       margin: 15px 0 30px;
       font-weight: 500;
-      color: $grey400;
+      color: $mainTextColor;
 
       &.questions{
         font-size: 14px;
+
         & > a{
-          color: $blue200;
+          color: $secondaryColor;
           font-weight: 600;
-          font-size: 16px;
           padding-bottom: 3px;
           border-bottom: 1px solid $grey200;
           &:hover{
-            color: $blue400;
+            color: $primaryColor;
           }
         }
       }

@@ -73,7 +73,7 @@ header .nav-right a.menu-title > i {
   margin: 0 5px;
 }
 header .nav-right a:hover {
-  color: #25ab94;
+  color: #EF6F31;
 }
 header .nav-right a.profile {
   font-size: 18px;
@@ -110,10 +110,10 @@ header .nav-right .search input {
 }
 header .nav-right .search button {
   width: 30px;
-  color: #25ab94;
+  color: #EF6F31;
 }
 header .nav-right .search button:hover {
-  background-color: #25ab94;
+  background-color: #EF6F31;
   color: #f6f3f5;
 }
 
@@ -175,9 +175,8 @@ header .nav-right .search button:hover {
   font-size: 14px;
 }
 .hero .block-text p.questions > a {
-  color: #25ab94;
+  color: #EF6F31;
   font-weight: 600;
-  font-size: 16px;
   padding-bottom: 3px;
   border-bottom: 1px solid #f5f1ed;
 }
@@ -199,7 +198,7 @@ header .nav-right .search button:hover {
 a.button {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #25ab94;
+  background-color: #EF6F31;
   font-size: 10px;
   font-weight: 600;
   color: #fff;
@@ -235,7 +234,7 @@ footer .footer-container ul > li {
   font-weight: 500;
 }
 footer .footer-container ul > li > a:hover {
-  color: #25ab94;
+  color: #EF6F31;
 }
 footer .footer-container .social-icons i {
   font-size: 18px;
@@ -296,14 +295,14 @@ footer .footer-container .copyright-bar {
   padding: 0 20px;
 }
 .featured-courses .courses-list a.course > ul.features h3.price {
-  color: #25ab94;
+  color: #EF6F31;
   font-size: 12px;
 }
 .featured-courses .courses-list a.course > ul.features h3.price > span {
   font-size: 16px;
 }
 .featured-courses .courses-list a.course > ul.features h4.course-name:hover {
-  color: #25ab94;
+  color: #EF6F31;
 }
 .featured-courses .courses-list a.course > ul.features li.other-features {
   display: inline-block;
@@ -348,6 +347,68 @@ footer .footer-container .copyright-bar {
   font-size: 12px;
 }
 .smart-tutoring .benefits li a:hover {
+  color: #3F3A64;
+}
+.smart-tutoring .guide-book {
+  padding-top: 100px;
+}
+.smart-tutoring .guide-book .block-video {
+  position: relative;
+  flex-basis: 60%;
+}
+.smart-tutoring .guide-book .block-video img.pattern {
+  position: absolute;
+  width: 150px;
+}
+.smart-tutoring .guide-book .block-video img.pattern.rounded-pois {
+  top: 80px;
+  left: -80px;
+}
+.smart-tutoring .guide-book .block-video img.pattern.pois {
+  bottom: -50px;
+  right: -30px;
+}
+.smart-tutoring .guide-book .block-video video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.smart-tutoring .guide-book .block-video a.play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.smart-tutoring .guide-book .block-text {
+  flex-basis: 40%;
+  padding: 20px 50px;
+}
+.smart-tutoring .guide-book .block-text h3 {
+  color: #8C89A2;
+}
+.smart-tutoring .guide-book .block-text h3 span {
+  color: #3F3A64;
+  font-weight: 500;
+}
+.smart-tutoring .guide-book .block-text h2 {
+  font-size: 28px;
+}
+.smart-tutoring .guide-book .block-text h2 span {
+  color: #EF6F31;
+  font-weight: 400;
+}
+.smart-tutoring .guide-book .block-text p {
+  margin: 30px 0;
+}
+.smart-tutoring .guide-book .block-text > a {
+  color: #EF6F31;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 50px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #f5f1ed;
+}
+.smart-tutoring .guide-book .block-text > a:hover {
   color: #3F3A64;
 }
 

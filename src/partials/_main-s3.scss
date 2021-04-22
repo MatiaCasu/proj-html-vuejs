@@ -29,22 +29,96 @@
 
     & a{
       font-weight: 600;
-      color:  $grey400;
+      color:  $mainTextColor;
       font-size: 12px;
 
       &:hover{
-        color: $blue400;
+        color: $primaryColor;
       }
     }
   }
   // /smart tutoring app BENEFITS
 
   // guide book
-  // .guide-book{
-  //   min-height: 500px;
-  //   background-color: pink;
-  // }
+  .guide-book{
+    padding-top: 100px;
 
+    // video
+    .block-video{
+      position: relative;
+      flex-basis: 60%;
+
+      & img.pattern{
+        position: absolute;
+        width: 150px;
+
+        &.rounded-pois{
+          top: 80px;
+          left: -80px;
+        }
+
+        &.pois{
+          bottom: -50px;
+          right: -30px;
+        }
+      }
+
+      & video{
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      & a.play-button{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    // video
+
+    // text
+    & .block-text{
+      flex-basis: 40%;
+      padding: 20px 50px;
+
+      h3{
+        color: $mainTextColor;
+
+        span{
+          color: $primaryColor;
+          font-weight: 500;
+        }
+      }
+
+      & h2{
+        font-size: 28px;
+
+        span{
+          color: $secondaryColor;
+          font-weight: 400;
+        }
+      }
+
+      & p{
+        margin: 30px 0;
+      }
+
+      & > a{
+        color: $secondaryColor;
+        font-weight: 600;
+        font-size: 14px;
+        margin-top: 50px;
+        padding-bottom: 3px;
+        border-bottom: 1px solid $grey200;
+
+        &:hover{
+          color: $primaryColor;
+        }
+      }
+    }
+    // /text
+  }
   // /guide book
-
 }

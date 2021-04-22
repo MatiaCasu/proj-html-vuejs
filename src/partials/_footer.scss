@@ -6,7 +6,7 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 50px 0;
-    color: $grey400;
+    color: $mainTextColor;
 
     // commons
     .footer-left, .footer-right{
@@ -26,7 +26,7 @@ footer{
       font-weight: 500;
 
       & > a:hover{
-        color: $blue200;
+        color: $secondaryColor;
       }
     }
     // commons
@@ -35,7 +35,7 @@ footer{
     .social-icons i{
       font-size: 18px;
       margin-right: 15px;
-      color: $grey400;
+      color: $mainTextColor;
     }
     // /footer left side
 
