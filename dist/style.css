@@ -547,3 +547,48 @@ p {
   color: #8C89A2;
   text-transform: uppercase;
 }
+
+.best-blogs {
+  background-color: #f5f1ed;
+}
+.best-blogs .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.best-blogs .most-viewed {
+  flex-basis: 40%;
+}
+.best-blogs .most-viewed ul li {
+  color: #3F3A64;
+  font-size: 10px;
+  font-weight: 600;
+  margin: 10px 0;
+  display: flex;
+}
+.best-blogs .most-viewed ul li span {
+  margin-right: 10px;
+}
+.best-blogs .blogs-cards {
+  flex-basis: 60%;
+}
+.best-blogs .blog {
+  width: 50%;
+  margin: 0 15px;
+  min-height: 100px;
+  background-color: #fff;
+}
+.best-blogs .blog img {
+  width: 100%;
+}
+.best-blogs .blog .blog-text {
+  padding: 20px;
+}
+.best-blogs .blog .blog-info li {
+  margin-right: 15px;
+}
+.best-blogs .blog .blog-info li, .best-blogs .blog .blog-info li > * {
+  color: #8C89A2;
+  font-size: 10px;
+  display: inline-block;
+}
